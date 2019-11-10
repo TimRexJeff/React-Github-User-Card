@@ -3,7 +3,9 @@
 }
 
 .App-logo {
+  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
+  pointer-events: none;
 }
 
 .App-header {
@@ -18,5 +20,33 @@
 }
 
 .App-link {
-  color: #09d3ac;
+  color: #61dafb;
+}
+
+.profile-pic {
+  height: auto;
+  max-width: 250px;
+}
+
+.follower-pic {
+  height: auto;
+  max-width: 100px;
+}
+
+.container {
+  display: flex;
+}
+
+.followers-container {
+  padding: 5%;
+}
+
+.followers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.follower-card,
+.user-card {
+  margin: 2%;
 }

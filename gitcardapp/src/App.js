@@ -1,43 +1,18 @@
-import React from 'react';
-import axios from 'axios'
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import User from "./components/User"
+import "./App.css"
 
-class App extends React.Component {
+function App() {
+  return (
+    <div className="App">
+      <User />
+    </div>
+  )
+}
 
-  state = {
+export default App
 
-  }
 
-  axios.get('https://api.github.com/users/TimRexJeff')
-    .then( response => {
-
-    })
-    .catch( err => {
-      console.log(err)
-    })
-
-  render() {
-    return (
-      <div class="card">
-        <img src={avatar_url} />
-        <div class="card-info">
-          <h3 class="name">{name}</h3>
-          <p class="username">{login}</p>
-          <p>Location: {location}</p>
-          <p>Profile:  
-            <a href={url}>{url}</a>
-          </p>
-          <p>Followers: {followers}</p>
-          <p>Following: {following}</p>
-          <p>Bio: {bio}</p>
-        </div>
-      </div>
-    );
-  };
-};
-
-export default App;
 /*
 {
     "login": "TimRexJeff",
